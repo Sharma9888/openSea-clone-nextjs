@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import NFTCard from '../components/NFTCard'
 import { client } from '../lib/sanityClient'
 import toast, { Toaster } from 'react-hot-toast'
 

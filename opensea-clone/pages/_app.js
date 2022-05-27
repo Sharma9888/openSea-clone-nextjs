@@ -9,6 +9,7 @@ const supportedChainIds = [4]
 const connectors = {
   injected: {},
 }
+
 function MyApp({ Component, pageProps }) {
   return (
     <ThirdwebWeb3Provider

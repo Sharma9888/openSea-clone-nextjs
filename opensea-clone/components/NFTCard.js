@@ -23,8 +23,6 @@ const NFTCard = ({ nftItem, title, listings }) => {
   const [isListed, setIsListed] = useState(false)
   const [price, setPrice] = useState(0)
 
-  console.log('price', price)
-
   useEffect(() => {
     const listing = listings.find((listing) => listing.asset.id === nftItem.id)
     if (Boolean(listing)) {
@@ -52,7 +50,7 @@ const NFTCard = ({ nftItem, title, listings }) => {
             <div className={style.collectionName}>{title}</div>
             <div className={style.assetName}>{nftItem.name}</div>
           </div>
-          {!isListed && (
+          {isListed && (
             <div className={style.infoRight}>
               <div className={style.priceTag}>Price</div>
               <div className={style.priceValue}>
